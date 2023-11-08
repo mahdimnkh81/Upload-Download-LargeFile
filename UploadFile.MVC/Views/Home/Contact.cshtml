@@ -1,0 +1,147 @@
+﻿@using UploadFile.BAL.Models
+@using Kendo.Mvc.UI
+@using Kendo.Mvc.UI.Html
+@model FileModel
+
+
+@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+
+<div class="">
+    @using (Html.BeginForm("FillForm", "Home", FormMethod.Post))
+    {
+        <div class="form">
+            <div class="row">
+                @Html.LabelFor(parent => parent.PhoneNumber, "موبایل")
+                @Html.Kendo().TextBoxFor(x => x.PhoneNumber).Name("PhoneNumber").HtmlAttributes(new { @class = "form-control" })
+            </div>
+
+
+
+
+            <div class="row">
+                @Html.LabelFor(parent => parent.NameFile, "نام فایل")
+                @Html.Kendo().TextBoxFor(x => x.NameFile).Name("NameFile").HtmlAttributes(new { @class = "form-control" })
+
+            </div>
+
+            <div class="row">
+                @{Guid obj = Guid.NewGuid();}
+                @Html.LabelFor(parent => parent.IssueTracking, "شماره پیگیری")
+                @Html.Kendo().TextBoxFor(x => x.IssueTracking).Name("IssueTracking").HtmlAttributes(new { @class = "form-control" ,@readonly = "readonly"}).Value(obj.ToString())
+            </div>
+
+
+            <div class="upload">
+                <div class="demo-section wide" style="margin-bottom:1em; position: relative;">
+                    <div style="width:50%; ">
+                        @(Html.Kendo().Upload()
+                            .Name("files")
+                            .Async(a => a
+                                .Save("Chunk_Upload_Save", "Upload")
+                                .Remove("Chunk_Upload_Remove", "Upload")
+                                .AutoUpload(false)
+                            .ChunkSize(11000)
+
+                            )
+
+                        )
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="buttonSave">
+                    <button type="submit" class="k-button k-insert">
+                        ثبت
+                    </button>
+                </div>
+        </div>
+
+
+    }
+    <style>
+
+
+        .k-textbox.form-control {
+            padding-left: 100px;
+            /*background-color: burlywood;*/
+            text-align: center;
+        }
+
+        .k-textbox.form-control2 {
+            padding-left: 100px;
+            padding-top: 200px;
+            /*background-color: aquamarine;*/
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
+
+            /*.form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 45px;
+        }*/
+
+            .row label {
+                width: 50px;
+                margin-left: 20px;
+            }
+
+        .k-textbox.form-control {
+            width: 500px;
+            text-align: right;
+        }
+
+        .buttonSave {
+            display: flex;
+            width: 350px;
+            justify-content: flex-start;
+        }
+
+        .k-button {
+            width: 100px;
+            background-color: slategray;
+        }
+
+        .upload {
+            padding-top: 20px;
+            direction: rtl;
+
+        }
+
+        .Alow {
+            padding: 100px;
+        }
+        .k-textbox.form-control {
+            padding-left: unset;
+        }
+        .k-textbox.form-control {
+            width: 100%;
+        }
+    </style>
+
+    <script>
+        function onChange() {
+            $("form").submit();
+        }
+        $("#limitUploadSize").change(function () {
+            $("form").submit();
+        })
+    </script>
+
+

@@ -1,0 +1,11 @@
+D:\WCF\UploadFile.DAL\bin\Debug\UploadFile.DAL.dll.config
+D:\WCF\UploadFile.DAL\bin\Debug\UploadFile.DAL.dll
+D:\WCF\UploadFile.DAL\bin\Debug\UploadFile.DAL.pdb
+D:\WCF\UploadFile.DAL\bin\Debug\EntityFramework.dll
+D:\WCF\UploadFile.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\WCF\UploadFile.DAL\bin\Debug\EntityFramework.xml
+D:\WCF\UploadFile.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\WCF\UploadFile.DAL\obj\Debug\UploadFile.DAL.csproj.CoreCompileInputs.cache
+D:\WCF\UploadFile.DAL\obj\Debug\UploadFile.DAL.csproj.CopyComplete
+D:\WCF\UploadFile.DAL\obj\Debug\UploadFile.DAL.dll
+D:\WCF\UploadFile.DAL\obj\Debug\UploadFile.DAL.pdb

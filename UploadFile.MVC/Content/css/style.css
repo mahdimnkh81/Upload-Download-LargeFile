@@ -1,0 +1,921 @@
+﻿@import url(fontiran.css); /* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
+body {
+    font-family: IRANSans !important;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, input, textarea {
+    font-family: IRANSans !important;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.wrapper {
+    /*max-width: 900px;*/
+    margin: 0 auto;
+}
+
+.ltr {
+    direction: ltr;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-small {
+    font-size: 0.8em;
+}
+
+.text-xsmall {
+    font-size: 0.6em;
+}
+
+.text-large {
+    font-size: 1.2em;
+}
+
+.text-xlarge {
+    font-size: 1.4em;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-ultralight {
+    font-weight: 200;
+}
+
+.text-light {
+    font-weight: 300;
+}
+
+.text-regular {
+    font-weight: normal;
+}
+
+.text-medium {
+    font-weight: 500;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+blockquote {
+    font-weight: 500;
+    padding: 10px;
+    border: 1px dashed #666666;
+}
+
+.mainbox {
+    width: 100%;
+    background-color: #EFEFEF;
+    display: table;
+    margin-bottom: 30px;
+    border-right: 8px solid #FFFF33;
+}
+
+.mainboxnegativ {
+    width: 100%;
+    background-color: #000000;
+    display: table;
+    margin-bottom: 30px;
+    border-right: 8px solid #FFFF33;
+    color: #F9F9F9;
+}
+
+.mainbox2 {
+    font-size: 1em;
+    width: 90%;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mainbox3 {
+    width: 100%;
+    background-color: #b8b8b8;
+    display: table;
+    margin-bottom: 30px;
+    border-right: 8px solid #bd70ff;
+}
+
+.mainbox2negativ {
+    font-size: 1em;
+    color: #F9F9F9;
+    background-color: #000000;
+    padding-right: 20px;
+}
+
+.farsiparagraph {
+    font-size: 1em;
+    width: 47%;
+    float: right;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.englishparagraph {
+    font-size: 1em;
+    width: 47%;
+    float: left;
+    direction: ltr;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.rightbox {
+    width: 60%;
+    padding-right: 20px;
+    padding-left: 5px;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    min-width: 0px;
+    background-color: #F7F7F7;
+}
+
+.titelbox {
+    width: 60%;
+    padding-right: 25px;
+    padding-left: 0px;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    min-width: 0px;
+    background-color: #F2F2F2;
+    color: #4B4B4B;
+}
+
+
+.lefttbox {
+    padding-right: 20px;
+    padding-left: 4px;
+    float: right;
+    margin-bottom: 10px;
+    min-width: 0px;
+}
+
+.alphabet {
+    width: 35%;
+    float: left;
+    font-size: 21em;
+    text-align: center;
+    font-weight: 500;
+    color: #999999;
+}
+
+.alphabet2 {
+    width: 35%;
+    float: left;
+    direction: ltr;
+    font-size: 1.6em;
+    text-align: left;
+    font-weight: 500;
+    color: #333333;
+    margin-top: 100px;
+}
+
+.footer {
+    font-weight: 300;
+    font-size: 0.7em;
+    text-align: center;
+    /*direction: ltr;*/
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+div.form-group > .form-control {
+    display: block;
+}
+
+div.form-group > .k-textbox {
+    display: block;
+}
+
+.k-autocomplete,
+.k-colorpicker,
+.k-combobox,
+/*.k-datepicker,*/
+.k-datetimepicker,
+.k-dropdown,
+.k-listbox,
+.k-numerictextbox,
+.k-selectbox,
+.k-textbox,
+/*.k-timepicker,*/
+.k-toolbar .k-split-button {
+    position: relative;
+    /* display: inline-block; */
+    width: 100%;
+    overflow: visible;
+    border-width: 0;
+    vertical-align: middle;
+}
+
+.k-autocomplete,
+.k-colorpicker,
+.k-combobox,
+.k-datepicker,
+.k-datetimepicker,
+.k-dropdown,
+.k-listbox,
+.k-numerictextbox,
+.k-selectbox,
+.k-textbox,
+.k-timepicker,
+.k-toolbar .k-split-button {
+    width: 100% !important;
+}
+
+.layout-content-wrapper {
+    background-color: white !important;
+}
+
+.textarea {
+    resize: none;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-y: scroll;
+}
+
+    .textarea:disabled {
+        color: #a5a7a6;
+    }
+
+        .textarea:disabled:hover {
+            color: #a5a7a6;
+        }
+
+input:disabled {
+    background-color: #e8e9e6 !important;
+}
+
+.rtl input:disabled {
+    text-align: right;
+    text-indent: 0.8em;
+    direction: rtl;
+}
+
+.required-star.colon:after {
+    content: "\003a\002a"
+}
+
+.colon:after {
+    content: "\003a"
+}
+
+.dash-after:after {
+    content: "\002D"
+}
+
+span.dash-after > span {
+    display: inline-block;
+}
+
+.person-persontype {
+    margin-right: 15px;
+}
+
+.divPart {
+    margin-bottom: 30px;
+}
+
+/*   style for FacilityNumberInputs in Facility.cshtml */
+div.group-control > .form-control.FacilityNumberInputs {
+    display: inline-block;
+    width: initial !important;
+    border-radius: 4px;
+}
+
+span.FacilityNumberInputs {
+    border: none;
+}
+
+    span.FacilityNumberInputs > span {
+        border: none;
+    }
+
+        span.FacilityNumberInputs > span > input.FacilityNumberInputs {
+            border: 1px solid #d2d6de
+        }
+
+div.form-group .form-control.FacilityNumberInputs.FacilityNumberInput1 {
+    max-width: 60px;
+}
+
+div.form-group .form-control.FacilityNumberInputs.FacilityNumberInput2 {
+    max-width: 50px;
+}
+
+div.form-group .form-control.FacilityNumberInputs.FacilityNumberInput3 {
+    max-width: 98px;
+}
+
+div.form-group .form-control.FacilityNumberInputs.FacilityNumberInput4 {
+    max-width: 50px;
+}
+
+/*   style for LegalActionLetterNumber in Facility.cshtml */
+div.group-control > .form-control.NumberInputs {
+    display: inline-block;
+    width: initial !important;
+    border-radius: 4px;
+}
+
+span.NumberInputs {
+    border: none;
+}
+
+    span.NumberInputs > span {
+        border: none;
+    }
+
+        span.NumberInputs > span > input.NumberInputs {
+            border: 1px solid #d2d6de
+        }
+
+div.form-group .form-control.NumberInputs.NumberInput1 {
+    max-width: 60px;
+}
+
+div.form-group .form-control.NumberInputs.NumberInput2 {
+    max-width: 50px;
+}
+
+div.form-group .form-control.NumberInputs.NumberInput3 {
+    max-width: 70px;
+}
+
+div.form-group .form-control.NumberInputs.NumberInput4 {
+    max-width: 50px;
+}
+
+/* kendo overwrite */
+span.remove-spin-pad > span.k-numeric-wrap {
+    padding-right: 0;
+}
+
+div.k-content.k-rtl span {
+    direction: rtl;
+}
+
+
+/*layout*/
+.main-sidebar > .sidebar {
+    padding-top: 20px;
+}
+
+/* wizard css  */
+#wizard-wrapper {
+    padding: 15px 12px;
+}
+
+#wizard-layout .content-wrapper, #wizard-layout .main-footer {
+    margin-right: 0;
+}
+
+.index-container {
+    padding: 20px 15px 2px 2px;
+    background-color: #ecf0f5;
+}
+
+.relation-content {
+    padding: 15px;
+    margin: 0 7px;
+}
+
+.clearForm.k-button {
+    display: none;
+    height: 35px;
+    width: 100px;
+}
+
+    .clearForm.k-button > span {
+        margin-left: 5px;
+    }
+
+.index-grid-container {
+    /*display: inline-block;*/
+    /*width: calc(100% - 83px);*/
+}
+
+.index-button-container {
+    /*display: inline-block;*/
+    /*vertical-align: top;*/
+    margin-top: 10px;
+}
+
+.index-grid-wrapper {
+    padding: 10px;
+}
+
+.person-bar.container-fluid {
+    padding: 10px 0;
+}
+
+#partial-legal-person-form {
+    margin: 15px -10px 0 0;
+}
+
+#partial-actual-person-form {
+    margin: 15px -10px 0 0;
+}
+
+/*   menu   */
+ul.sidebar-menu > li > ul > li {
+    margin-right: 20px;
+}
+
+.menu-icon {
+    width: 17px;
+    margin-right: 10px;
+}
+
+/*  end Menu   */
+
+.transparentAjax {
+    display: none;
+    background: rgb(0,0,0) url('../../Content/Images/loading15.gif') no-repeat center;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    /* Required for IE 5, 6, 7 */
+    /* ...or something to trigger hasLayout, like zoom: 1; */
+    width: 100%;
+    /* Theoretically for IE 8 & 9 (more valid) */
+    /* ...but not required as filter works too */
+    /* should come BEFORE filter */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* This works in IE 8 & 9 too */
+    /* ... but also 5, 6, 7 */
+    filter: alpha(opacity=50);
+    /* Older than Firefox 0.9 */
+    -moz-opacity: 0.5;
+    /* Safari 1.x (pre WebKit!) */
+    -khtml-opacity: 0.5;
+    /* Modern!
+         /* Firefox 0.9+, Safari 2?, Chrome any?
+         /* Opera 9+, IE 9+ */
+    opacity: 0.5;
+}
+/* home tile*/
+
+.card-link.disable-card {
+    cursor: initial;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .card > .container > p {
+        min-height: 40px;
+    }
+
+.card-link.disable-card > .card {
+    -ms-opacity: 0.4;
+    opacity: 0.4;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.08);
+}
+
+    .card-link.disable-card > .card:hover {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.08);
+    }
+
+
+.tile-container {
+    padding: 50px;
+    background-color: #ecf0f5;
+}
+
+@media only screen and (max-width: 500px) {
+    .tile-container {
+        padding: 0;
+    }
+}
+
+.tile-container img {
+    border-radius: 5px 5px 0 0;
+}
+
+.tile-container > .container {
+    padding: 2px 16px;
+}
+
+.no-menu > div.wrapper > div.content-wrapper {
+    margin-right: 0;
+}
+
+.no-menu > div.wrapper > footer {
+    margin-right: 0;
+}
+/*  cartable */
+#cartablDetailPopup {
+    min-width: 500px;
+}
+
+.rtl .input-group.relation-group > .input-group-addon.btn-addon:first-child {
+    border-right-color: #d2d6de;
+}
+
+.rtl .input-group.relation-group > input:last-child {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.input-group-addon:hover {
+    cursor: pointer;
+}
+
+
+
+
+.dimensionless.form-group {
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+}
+
+
+
+.container-fluid > .row > .form-group {
+    box-sizing: border-box;
+}
+
+/*  saerchby view*/
+.search-item {
+    /*display: inline-block;
+    margin: 1px 1px 1px 35px;*/
+}
+
+.input-value-SearchRequestModel {
+    width: -webkit-calc(100% - 240px) !important;
+    width: -moz-calc(100% - 340px) !important;
+    width: calc(100% - 340px) !important;
+    min-width: 200px;
+}
+
+.search-creation-container {
+    height: 266px;
+    /*overflow-y: auto;
+    overflow-x: hidden;*/
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+    .search-creation-container .row {
+        margin: 0;
+    }
+
+.search-items-container {
+    height: 220px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*border: 1px solid #cccccc;
+    border-radius: 4px;*/
+}
+
+.search-btn-container {
+    padding: 2px 56px;
+}
+
+
+/* readonly contact list */
+#readonly-contact-grid td, #readonly-contact-grid th,
+#readonly-contact-grid div, #readonly-contact-grid div a {
+    background-color: #e8e9e6;
+}
+
+
+.border-solid {
+    border: solid 1px #000000;
+    border-radius: 10px;
+    margin: 10px;
+    /*background: #cdf1ff;*/
+}
+
+
+/* metro tile style */
+.masonry-tile {
+    float: right;
+    /*width: 200px;*/
+    height: 220px;
+    margin-bottom: 20px;
+    /*border: 2px solid #000000;*/
+    /*border: 2px solid hsla(0, 0%, 0%, 0.5);*/
+}
+
+    .masonry-tile.tile2x {
+        height: 520px;
+    }
+
+.masonry-gutter-sizer {
+    width: 2%;
+}
+
+.masonry-tile, .masonry-tile-sizer {
+    /*width: 18.63%;*/
+    width: 15%;
+}
+
+    .masonry-tile.tile2x {
+        /*width: 18.63%;*/
+        width: 32%;
+    }
+
+@media screen and (max-width: 1200px) {
+    .masonry-tile, .masonry-tile-sizer {
+        /*width: 23.34%;*/
+        width: 18.4%;
+    }
+
+        .masonry-tile.tile2x {
+            width: 38.8%;
+        }
+
+    .masonry-gutter-sizer {
+        width: 2%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .masonry-tile, .masonry-tile-sizer {
+        /*width: 31.55%;*/
+        width: 22.75%;
+    }
+
+        .masonry-tile.tile2x {
+            width: 48.5%;
+        }
+
+    .masonry-gutter-sizer {
+        width: 3%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .masonry-tile, .masonry-tile-sizer {
+        /*width: 46%;*/
+        width: 30.6666%;
+    }
+
+        .masonry-tile.tile2x {
+            width: 65.3333%;
+        }
+
+    .masonry-gutter-sizer {
+        width: 4%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .masonry-tile, .masonry-tile-sizer {
+        /*width: 46%;*/
+        width: 47.5%;
+    }
+
+        .masonry-tile.tile2x {
+            width: 100%;
+        }
+
+    .masonry-gutter-sizer {
+        width: 5%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .masonry-tile, .masonry-tile-sizer {
+        width: 100%;
+    }
+
+        .masonry-tile.tile2x {
+            width: 100%;
+        }
+
+    .masonry-gutter-sizer {
+        width: 0;
+    }
+}
+
+.tile-image-container {
+    width: 100%;
+    display: flex;
+    margin-top: 12px;
+    /* align-content: center; */
+    justify-content: center;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    /*-webkit-transition: -webkit-transform .7s;
+    -moz-transition: -moz-transform .7s;
+    -ms-transition: -ms-transform .7s;
+    -o-transition: -o-transform .7s;
+    transition: transform .7s;*/
+}
+
+.masonry-tile:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1,1.05);
+    -moz-transform: scale(1.1,1.05);
+    -ms-transform: scale(1.1,1.05);
+    -o-transform: scale(1.1,1.05);
+    transform: scale(1.1,1.05);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.tile:before {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+    right: 0px;
+    height: 0px;
+    background: rgba(255,255,255,0.4);
+    /*border-radius: 5px;*/
+    transition: all 1s ease;
+}
+
+.tile:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    height: 0px;
+    background: rgba(255,255,255,0.4);
+    /*border-radius: 5px;*/
+    transition: all 1s ease;
+}
+
+.tile:hover:before {
+    height: 50%;
+}
+
+.tile:hover:after {
+    height: 50%;
+}
+
+/*.masonry-tile:hover .tile-image-container {
+        transform: rotateY(180deg);
+    }*/
+.tile-image {
+    width: 160px;
+    height: 160px;
+    margin: 2px 0;
+}
+
+.tile2x .tile-image {
+    width: 400px;
+    height: 400px;
+    margin: 25px 0 20px;
+}
+
+.tite-title {
+    width: 100%;
+    display: flex;
+    /* align-content: center; */
+    justify-content: center;
+}
+
+
+.tile-title > p, .tile-title > h4 {
+    text-align: center;
+}
+/* metro tile style */
+
+.header-title {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/* kendo-checkbox start */
+
+.kendo-checkbox {
+    float: right;
+    display: none;
+}
+
+.kendo-checkbox-label:before {
+    border-color: #ccc;
+    background: #fff;
+    border-radius: 3px;
+}
+
+.kendo-checkbox:focus + .kendo-checkbox-label:before, .kendo-checkbox:focus + .kendo-checkbox-label:hover:before {
+    border-color: #76abd9;
+    -webkit-box-shadow: 0 0 2px 0 #76abd9;
+    box-shadow: 0 0 2px 0 #76abd9;
+}
+
+.kendo-checkbox-label:before {
+    font: 14px WebComponentsIcons,monospace;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 1px;
+    border-style: solid;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.kendo-checkbox-label:before {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.k-rtl .kendo-checkbox-label:before {
+    right: 0;
+}
+
+.kendo-checkbox:checked + .kendo-checkbox-label:before {
+    content: "\e118";
+}
+
+.k-rtl .kendo-checkbox-label {
+    padding-right: 1.5em;
+}
+
+input.kendo-checkbox + label {
+    -webkit-user-select: none;
+}
+
+.kendo-checkbox-label {
+    display: inline-block;
+    position: relative;
+    padding-left: 25.2px;
+    vertical-align: text-top;
+    line-height: 16px;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 0;
+}
+
+    .kendo-checkbox-label:hover:before,
+    .kendo-checkbox:checked + .kendo-checkbox-label:hover:before,
+    .kendo-checkbox:checked:hover + .kendo-checkbox-label:before,
+    .kendo-checkbox:hover + .kendo-checkbox-label:before {
+        border-color: #aeaeae;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+/* kendo-checkbox end */
+
+/* ReadOnly kendo component start  */
+
+/* kendo disable textarea */
+
+textarea:disabled {
+    background-color: #e8e9e6 !important;
+}
+
+span.k-widget.k-dropdown.k-header {
+    background-color: #e8e9e6 !important;
+}
+
+.k-multiselect.k-state-disabled > div.k-multiselect-wrap {
+    background-color: #e8e9e6;
+}
+
+    .k-multiselect.k-state-disabled > div.k-multiselect-wrap input.k-input {
+        background-color: #e8e9e6;
+    }
+
+    .k-multiselect.k-state-disabled > div.k-multiselect-wrap ul > li {
+        color: #6b6c6e;
+        border-color: #999;
+        background-color: #ddd;
+    }
+
+.k-dropdown-wrap.k-state-disabled {
+    background-color: #e9ebeb;
+}
+/* ReadOnly kendo component end  */

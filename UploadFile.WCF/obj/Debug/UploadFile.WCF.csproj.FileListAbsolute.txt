@@ -1,0 +1,15 @@
+D:\WCF\UploadFile.WCF\bin\UploadFile.WCF.dll.config
+D:\WCF\UploadFile.WCF\bin\UploadFile.WCF.dll
+D:\WCF\UploadFile.WCF\bin\UploadFile.WCF.pdb
+D:\WCF\UploadFile.WCF\bin\EntityFramework.dll
+D:\WCF\UploadFile.WCF\bin\EntityFramework.SqlServer.dll
+D:\WCF\UploadFile.WCF\bin\UploadFile.DAL.dll
+D:\WCF\UploadFile.WCF\bin\UploadFile.DAL.pdb
+D:\WCF\UploadFile.WCF\bin\UploadFile.DAL.dll.config
+D:\WCF\UploadFile.WCF\bin\EntityFramework.xml
+D:\WCF\UploadFile.WCF\bin\EntityFramework.SqlServer.xml
+D:\WCF\UploadFile.WCF\obj\Debug\UploadFile.WCF.csprojAssemblyReference.cache
+D:\WCF\UploadFile.WCF\obj\Debug\UploadFile.WCF.csproj.CoreCompileInputs.cache
+D:\WCF\UploadFile.WCF\obj\Debug\UploadFile.WCF.csproj.CopyComplete
+D:\WCF\UploadFile.WCF\obj\Debug\UploadFile.WCF.dll
+D:\WCF\UploadFile.WCF\obj\Debug\UploadFile.WCF.pdb

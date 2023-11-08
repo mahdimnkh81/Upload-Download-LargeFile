@@ -1,0 +1,52 @@
+﻿@using Kendo.Mvc.UI
+@using UploadFile.BAL.Models
+@model FileModel
+
+@{
+
+    ViewBag.Title = "Home Page";
+}
+@using (Html.BeginForm("getFile", "Home", FormMethod.Post))
+{
+    <div class="upload">
+        <div class="demo-section wide" style="margin-bottom:1em; position: relative;">
+            <div style="width:40%; float:left">
+                @(Html.Kendo().Upload()
+            .Name("files")
+            .Async(a => a
+                .Save("Chunk_Upload_Save", "Upload")
+                .Remove("Chunk_Upload_Remove", "Upload")
+                .AutoUpload(false)
+            .ChunkSize(11000)
+            .Concurrent(true)
+            )
+            .DropZone(".dropZoneElement")
+                )
+            </div>
+        </div>
+    </div>
+    <div class="buttonSave">
+        <button type="submit" class="k-button k-insert">
+            ثبت
+        </button>
+    </div>
+}
+
+<style>
+    .upload {
+        padding-top: 100px;
+    }
+
+    .Alow {
+        padding: 100px;
+    }
+</style>
+<script>
+    function onChange() {
+        $("form").submit();
+    }
+    $("#limitUploadSize").change(function () {
+        $("form").submit();
+    })
+</script>
+
